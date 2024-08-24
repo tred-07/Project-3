@@ -41,7 +41,7 @@
           <h1 class="text-[#212121] font-[32px] font-extrabold">Rinterio</h1>
         </div>
         <div class="nav-op">
-          <ul class="flex gap-[15px]">
+          <ul class="hidden lg:flex gap-[15px]">
             <li class="list-none">
               <a href="" class="no-underline font-bold text-[16px]">Home</a>
             </li>
@@ -59,7 +59,7 @@
             </li>
           </ul>
         </div>
-        <div class="action flex gap-[15px] items-center">
+        <div class="action hidden lg:flex gap-[15px] items-center ">
           <div><i class="fa-solid fa-magnifying-glass"></i></div>
           <div><i class="fa-solid fa-cart-shopping text-black"></i></div>
           <div
@@ -72,6 +72,9 @@
               <i class="fa-solid fa-arrow-right -rotate-45 text-white"></i>
             </div>
           </div>
+        </div>
+        <div class="triple-bar lg:hidden">
+            <i class="fa-solid fa-bars"></i>
         </div>
       </div>
       <div class="banner">
@@ -89,7 +92,7 @@
           large windows that flood the space with natural light.
         </p>
         <button
-          class="bg-[#ABEF5F] bg-opacity-50 px-[24px] py-[12.01px] rounded-[32px] text-[20px] font-bold flex gap-[7.99px] mx-auto border-solid border-[#ABEF5F] border-[1px] my-[32px]" 
+          class="bg-[#ABEF5F] bg-opacity-50 px-[24px] py-[12.01px] rounded-[32px] text-[20px] font-bold flex gap-[7.99px] mx-auto border-solid border-[#ABEF5F] border-[1px] my-[32px]"
         >
           View Details
           <div class="bg-[#ABEF5F] rounded-[50%]">
@@ -100,6 +103,48 @@
         </button>
       </div>
     </header>
-    <main></main>
+    <main class="mx-auto">
+      <section class="section-1 flex flex-col lg:flex-row mx-auto py-[100px] relative">
+        <div class="absolute top-5 left-[87px]"><img src="./assets/Vector.png" alt="" class="rotate-105"></div>
+        <div class="mx-auto">
+          <button class="flex items-center rounded-[24px] bg-white shadow px-[16px] py-[8px] justify-center"> <i
+            class="fa-solid fa-arrow-right text-black px-2.5 py-2.5"
+          ></i><p>About us</p></button>
+          <h1 class="text-[40px] text-black font-bold">
+            We design thoughtful, <br />liveable spaces
+          </h1>
+          <p class="text-[16px] font-bold">
+            We design thoughtful, liveable spaces <br />
+            <span class="font-normal">
+              modern sophistication, featuring weathered wood, sleek metal
+              accents.</span
+            >
+          </p>
+          <div class="flex items-center gap-[24px] shadow p-[24px]">
+            <img src="./assets/commercial.png" alt="" />
+            <div>
+              <h1>Commercial</h1>
+              <p>
+                The barn house captivates with its blend of rustic charm and
+                modern.
+              </p>
+            </div>
+          </div>
+          <div class="flex items-center gap-[24px] shadow p-[24px]">
+            <img src="./assets/residential.png" alt="" />
+            <div>
+              <h1>Residential</h1>
+              <p>
+                The barn house captivates with its blend of rustic charm and
+                modern.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="mx-auto">
+          <img src="./assets/Rectangle.png" alt="" class="max-w-[100%]" />
+        </div>
+      </section>
+    </main>
   </body>
 </html>
