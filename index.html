@@ -91,13 +91,14 @@
   <main class="mx-auto">
     <!-- We design thoughtful, <br />liveable spaces -->
     <section class="section-1 bg-gray-100">
-      <div class="flex flex-col lg:flex-row mx-auto py-[100px] relative w-3/4 gap-[37px]">
-        <div class="absolute top-5 left-[87px]">
-          <img src="./assets/Vector.png" alt="" class="rotate-105" />
-        </div>
+      <div class="flex flex-col lg:flex-row mx-auto py-[100px] w-3/4 gap-[37px]">
         <div class="mx-auto">
           <button
-            class="flex items-center rounded-[24px] bg-white shadow-black shadow px-[16px] py-[8px] justify-center">
+            class="flex items-center rounded-[24px] bg-white shadow-black shadow px-[16px] py-[8px] justify-center relative">
+            <div class="absolute -top-[60%] left-[10%]" style="transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);">
+              <img src="./assets/Vector.png" alt="" />
+            </div>
             <i class="fa-solid fa-arrow-right text-black px-2.5 py-2.5"></i>
             <p>About us</p>
           </button>
@@ -113,8 +114,8 @@
           <div class="flex items-center gap-[24px] shadow-2xl p-[24px] bg-[#FFFFFF] rounded-[16px] mt-[24px]">
             <img src="./assets/commercial.png" alt="" />
             <div>
-              <h1>Commercial</h1>
-              <p>
+              <h1 class="font-extrabold text-[20px] text-[#494949]">Commercial</h1>
+              <p class="font-medium text-[#737373] text-[16px]">
                 The barn house captivates with its blend of rustic charm and
                 modern.
               </p>
@@ -123,8 +124,8 @@
           <div class="flex items-center gap-[24px] shadow-2xl p-[24px] bg-[#FFFFFF] mt-[24px] rounded-[16px]">
             <img src="./assets/residential.png" alt="" />
             <div>
-              <h1>Residential</h1>
-              <p>
+              <h1 class="font-extrabold text-[20px] text-[#494949]">Residential</h1>
+              <p class="font-medium text-[#737373] text-[16px]">
                 The barn house captivates with its blend of rustic charm and
                 modern.
               </p>
@@ -190,54 +191,56 @@
     <!-- end -->
     <!-- how we works start -->
     <section class="section-03 bg-gray-100 pb-[100px]">
-     <div class="mx-auto text-center">
-      <button class="flex flex-row gap-[8px] items-center mx-auto shadow-2xl shadow-black bg-white rounded-[24px] py-[8px] px-[16px]"><i class="fa-solid fa-arrow-right"></i>How we works</button>
-      <h1 class="font-bold text-[40px] text-[#212121]">Our Works Process</h1>
-      <p class="w-6/12 text-[#494949] text-[16px] font-medium mx-auto">
-        The barn house captivates with its blend of rustic charm and modern
-        sophistication, featuring weathered wood, sleek metal accents.
-      </p>
-      <div class="cards flex flex-col lg:flex-row w-3/4 mx-auto gap-[24px] my-[32px]">
-        <div class="shadow text-left bg-[#E7C1D3] p-[24px] rounded-[16px]">
-          <img src="./assets/concept.png" alt="" />
-          <h1 class="text-[20px] font-extrabold text-[#1C1C1C]">Concept</h1>
-          <p class="text-[16px] text-[#494949]">
-            The barn house captivates with its blend of rustic charm and
-            modern.
-          </p>
-        </div>
-        <div class="shadow text-left bg-[#EFDA6E] p-[24px] rounded-[16px]">
-          <img src="./assets/flow-chart.png" alt="" />
-          <h1 class="text-[20px] font-extrabold text-[#1C1C1C]">
-            Design Process
-          </h1>
-          <p class="text-[16px] text-[#494949]">
-            The barn house captivates with its blend of rustic charm and
-            modern.
-          </p>
-        </div>
-        <div class="shadow text-left bg-[#A4DAC3] p-[24px] rounded-[16px]">
-          <img src="./assets/vision.png" alt="" />
-          <h1 class="text-[20px] font-extrabold text-[#1C1C1C]">
-            Supervision
-          </h1>
-          <p class="text-[16px] text-[#494949]">
-            The barn house captivates with its blend of rustic charm and
-            modern.
-          </p>
-        </div>
-        <div class="shadow text-left bg-[#77AAEA] p-[24px] rounded-[16px]">
-          <img src="./assets/budget-planning.png" alt="" />
-          <h1 class="text-[20px] font-extrabold text-[#1C1C1C]">
-            Budget Planning
-          </h1>
-          <p class="text-[16px] text-[#494949]">
-            The barn house captivates with its blend of rustic charm and
-            modern.
-          </p>
+      <div class="mx-auto text-center w-3/4">
+        <button
+          class="flex flex-row gap-[8px] items-center mx-auto shadow-2xl shadow-black bg-white rounded-[24px] py-[8px] px-[16px]"><i
+            class="fa-solid fa-arrow-right"></i>How we works</button>
+        <h1 class="font-bold text-[40px] text-[#212121]">Our Works Process</h1>
+        <p class="w-6/12 text-[#494949] text-[16px] font-medium mx-auto">
+          The barn house captivates with its blend of rustic charm and modern
+          sophistication, featuring weathered wood, sleek metal accents.
+        </p>
+        <div class="cards flex flex-col lg:flex-row mx-auto gap-[24px] my-[32px] justify-center">
+          <div class="shadow text-left bg-[#E7C1D3] p-[24px] rounded-[16px]">
+            <img src="./assets/concept.png" alt="" />
+            <h1 class="text-[20px] font-extrabold text-[#1C1C1C]">Concept</h1>
+            <p class="text-[16px] text-[#494949]">
+              The barn house captivates with its blend of rustic charm and
+              modern.
+            </p>
+          </div>
+          <div class="shadow text-left bg-[#EFDA6E] p-[24px] rounded-[16px]">
+            <img src="./assets/flow-chart.png" alt="" />
+            <h1 class="text-[20px] font-extrabold text-[#1C1C1C]">
+              Design Process
+            </h1>
+            <p class="text-[16px] text-[#494949]">
+              The barn house captivates with its blend of rustic charm and
+              modern.
+            </p>
+          </div>
+          <div class="shadow text-left bg-[#A4DAC3] p-[24px] rounded-[16px]">
+            <img src="./assets/vision.png" alt="" />
+            <h1 class="text-[20px] font-extrabold text-[#1C1C1C]">
+              Supervision
+            </h1>
+            <p class="text-[16px] text-[#494949]">
+              The barn house captivates with its blend of rustic charm and
+              modern.
+            </p>
+          </div>
+          <div class="shadow text-left bg-[#77AAEA] p-[24px] rounded-[16px]">
+            <img src="./assets/budget-planning.png" alt="" />
+            <h1 class="text-[20px] font-extrabold text-[#1C1C1C]">
+              Budget Planning
+            </h1>
+            <p class="text-[16px] text-[#494949]">
+              The barn house captivates with its blend of rustic charm and
+              modern.
+            </p>
+          </div>
         </div>
       </div>
-     </div>
     </section>
     <!-- how we works end -->
     <!-- explore our latest project start -->
